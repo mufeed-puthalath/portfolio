@@ -3,299 +3,890 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start Your Business in Dubai | 3S Business Services</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Shijas & Munavvira — Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Pinyon+Script&family=Cinzel:wght@400;500;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --gold: #e8c96b; --gold-dark: #8a8066; --navy: #061b38; --blue: #0d1b2a;
-    --black: #000000; --body: #5F5F5F; --light: #f6f6f6; --border: #EEEEEE; --white: #ffffff;
-    --font-main: 'Plus Jakarta Sans', sans-serif; --font-heading: 'Space Grotesk', sans-serif;
-  }
-  html { scroll-behavior: smooth; }
-  body { font-family: var(--font-main); color: var(--body); background: var(--white); overflow-x: hidden; font-size: 16px; line-height: 1.7; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-  /* NAV */
-  .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
-  .topbar img { height: 52px; width: auto; }
-  .topbar-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--white); font-family: var(--font-heading); font-weight: 600; font-size: 14px; padding: 10px 22px; border-radius: 5px; text-decoration: none; transition: background 0.2s ease; }
-  .topbar-cta:hover { background: var(--gold-dark); }
+:root {
+  --forest: #1e3a2f;
+  --deep-forest: #142a21;
+  --forest-dark: #0d1f17;
+  --gold: #c9a84c;
+  --gold-light: #e2c97e;
+  --gold-pale: #f0dfa0;
+  --cream: #faf5e8;
+  --ivory: #f5edd6;
+  --white: #ffffff;
+  --text-light: rgba(255,255,255,0.88);
+  --text-dim: rgba(255,255,255,0.55);
+}
 
-  /* HERO */
-  .hero { background: linear-gradient(135deg, var(--blue) 0%, #0a2844 60%, #0d3560 100%); min-height: 88vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 80px 40px; }
-  .hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(167,157,128,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(167,157,128,0.05) 1px, transparent 1px); background-size: 72px 72px; pointer-events: none; }
-  .hero::after { content: ''; position: absolute; right: -100px; top: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(167,157,128,0.12) 0%, transparent 65%); pointer-events: none; }
-  .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; position: relative; z-index: 2; }
-  .hero-badge { display: inline-block; background: rgba(167,157,128,0.15); border: 1px solid rgba(167,157,128,0.4); color: var(--gold); font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; padding: 6px 16px; border-radius: 2px; margin-bottom: 24px; animation: fadeUp 0.6s ease both; }
-  .hero h1 { font-family: var(--font-heading); font-size: clamp(36px, 5vw, 58px); font-weight: 700; line-height: 1.15; color: var(--white); margin-bottom: 20px; animation: fadeUp 0.7s ease 0.1s both; }
-  .hero h1 span { color: var(--gold); }
-  .hero-lead { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 36px; max-width: 520px; animation: fadeUp 0.7s ease 0.2s both; }
-  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp 0.7s ease 0.3s both; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--forest-dark);
+  font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
+  cursor: default;
+}
 
-  /* BUTTONS */
-  .btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--white); font-family: var(--font-heading); font-weight: 700; font-size: 15px; padding: 14px 28px; border-radius: 5px; text-decoration: none; transition: all 0.2s ease; border: none; cursor: pointer; }
-  .btn-gold:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(167,157,128,0.35); }
-  .btn-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); font-family: var(--font-heading); font-weight: 600; font-size: 15px; padding: 14px 28px; border-radius: 5px; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); transition: all 0.2s ease; }
-  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-  .btn-blue { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background: var(--blue); color: var(--white); font-family: var(--font-heading); font-weight: 700; font-size: 14px; padding: 13px; border-radius: 5px; text-decoration: none; transition: all 0.2s ease; }
-  .btn-blue:hover { background: #1e3d5c; }
-  .btn-wa { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: var(--white); font-family: var(--font-heading); font-weight: 700; font-size: 15px; padding: 13px; border-radius: 5px; text-decoration: none; transition: all 0.2s ease; }
-  .btn-wa:hover { background: #1ea952; }
+/* ===================== DOOR SCENE ===================== */
+#scene {
+  position: fixed; inset: 0; z-index: 100;
+  background: radial-gradient(ellipse at 50% 30%, #1e3a2f 0%, #0d1f17 60%, #070f0c 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 0;
+  transition: opacity 1s ease 1.4s;
+  cursor: pointer;
+}
+#scene.away { opacity: 0; pointer-events: none; }
 
-  /* HERO CARD */
-  .hero-card { background: var(--white); border-radius: 12px; padding: 36px 32px; box-shadow: 0 24px 80px rgba(0,0,0,0.35); animation: fadeUp 0.8s ease 0.2s both; }
-  .hero-card h3 { font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
-  .hero-card p { font-size: 13px; color: var(--body); margin-bottom: 24px; }
-  .form-group { margin-bottom: 14px; }
-  .form-group label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--body); margin-bottom: 6px; }
-  .form-group input, .form-group select { width: 100%; border: 1px solid var(--border); border-radius: 5px; padding: 11px 14px; font-size: 14px; color: var(--black); font-family: var(--font-main); transition: border-color 0.2s ease; outline: none; background: var(--white); }
-  .form-group input:focus, .form-group select:focus { border-color: var(--gold); }
-  .form-submit { width: 100%; background: var(--blue); color: var(--white); font-family: var(--font-heading); font-weight: 700; font-size: 15px; padding: 14px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.2s ease; margin-top: 4px; }
-  .form-submit:hover { background: #1e3d5c; transform: translateY(-1px); }
-  .form-divider { text-align: center; font-size: 12px; color: #aaa; margin: 14px 0; position: relative; }
-  .form-divider::before, .form-divider::after { content: ''; position: absolute; top: 50%; width: 40%; height: 1px; background: var(--border); }
-  .form-divider::before { left: 0; } .form-divider::after { right: 0; }
+/* Ambient golden dust */
+.dust { position: absolute; border-radius: 50%; pointer-events: none; animation: rise linear infinite; }
+@keyframes rise {
+  0%   { transform: translateY(100vh) translateX(0) scale(0); opacity: 0; }
+  15%  { opacity: 0.8; }
+  85%  { opacity: 0.3; }
+  100% { transform: translateY(-10vh) translateX(20px) scale(1.2); opacity: 0; }
+}
 
-  /* TRUST BAR */
-  .trust-bar { background: var(--light); border-bottom: 1px solid var(--border); padding: 22px 40px; }
-  .trust-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 48px; }
-  .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--black); }
-  .trust-item .dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+/* Top Kerala arch */
+.arch-svg-wrap { width: min(360px, 82vw); position: relative; margin-bottom: -3px; z-index: 2; }
+.arch-svg-wrap svg { width: 100%; display: block; filter: drop-shadow(0 0 16px rgba(201,168,76,0.35)); }
 
-  /* SECTIONS */
-  section { padding: 80px 40px; }
-  .container { max-width: 1100px; margin: 0 auto; }
-  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
-  .section-title { font-family: var(--font-heading); font-size: clamp(26px, 3.5vw, 40px); font-weight: 700; color: var(--black); line-height: 1.2; margin-bottom: 14px; }
-  .section-sub { font-size: 16px; color: var(--body); max-width: 540px; line-height: 1.8; }
+/* Door frame */
+.door-frame {
+  width: min(360px, 82vw);
+  aspect-ratio: 10/14;
+  position: relative;
+  border: 2.5px solid var(--gold);
+  box-shadow: 0 0 60px rgba(201,168,76,0.18), inset 0 0 60px rgba(0,0,0,0.6);
+  background: var(--forest-dark);
+  overflow: hidden;
+}
 
-  /* SERVICES */
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
-  .service-card { border: 1px solid var(--border); border-radius: 12px; padding: 36px 28px; transition: all 0.3s ease; position: relative; overflow: hidden; }
-  .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform 0.3s ease; transform-origin: left; }
-  .service-card:hover { border-color: var(--gold); box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
-  .service-card:hover::before { transform: scaleX(1); }
-  .service-icon { width: 52px; height: 52px; background: rgba(167,157,128,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
-  .service-card h3 { font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--black); margin-bottom: 10px; }
-  .service-card p { font-size: 14px; color: var(--body); line-height: 1.75; margin-bottom: 20px; }
-  .service-price { font-family: var(--font-heading); font-size: 13px; color: var(--gold-dark); font-weight: 600; }
-  .service-price strong { font-size: 22px; color: var(--blue); }
+/* Glow behind door */
+.door-back {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse at 50% 60%, #2a5c40 0%, #1a3d2a 40%, #0d1f17 100%);
+  opacity: 0; transition: opacity 0.7s ease 0.5s;
+}
+.door-frame.open .door-back { opacity: 1; }
 
-  /* PRICING */
-  .pricing { background: var(--light); }
-  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
-  .pricing-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 32px 28px; text-align: center; position: relative; transition: all 0.3s ease; }
-  .pricing-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-3px); }
-  .pricing-card.featured { border-color: var(--gold); box-shadow: 0 8px 30px rgba(167,157,128,0.2); }
-  .featured-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--white); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 16px; border-radius: 20px; white-space: nowrap; }
-  .pricing-card h3 { font-family: var(--font-heading); font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--body); margin-bottom: 16px; }
-  .price { font-family: var(--font-heading); font-size: 44px; font-weight: 700; color: var(--blue); margin-bottom: 4px; line-height: 1; }
-  .price-note { font-size: 12px; color: #aaa; margin-bottom: 24px; }
-  .pricing-features { list-style: none; text-align: left; margin-bottom: 28px; }
-  .pricing-features li { font-size: 13px; color: var(--body); padding: 7px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
-  .pricing-features li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+.door-back-text {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  opacity: 0; transform: scale(0.9); transition: all 0.6s ease 1.1s;
+}
+.door-frame.open .door-back-text { opacity: 1; transform: scale(1); }
+.door-back-text .preview-names {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(1.6rem, 6vw, 2.4rem);
+  color: var(--gold-light);
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 0 30px rgba(201,168,76,0.5);
+}
+.door-back-text .preview-sub {
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem; letter-spacing: 0.4em; color: rgba(201,168,76,0.7);
+  text-transform: uppercase;
+}
 
-  /* WHY */
-  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 48px; }
-  .why-item { border-left: 3px solid var(--gold); padding-left: 20px; }
-  .why-num { font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: rgba(167,157,128,0.25); line-height: 1; margin-bottom: 8px; }
-  .why-item h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
-  .why-item p { font-size: 13px; color: var(--body); line-height: 1.75; }
+/* Door halves */
+.door-half {
+  position: absolute; top: 0; width: 50%; height: 100%;
+  background: linear-gradient(160deg, #2a4a35 0%, #1a3327 40%, #112619 70%, #0d1f17 100%);
+  transition: transform 1.1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 10; overflow: hidden;
+}
+.door-half::after {
+  content: '';position:absolute;inset:0;
+  background: repeating-linear-gradient(180deg, transparent 0, transparent 10px, rgba(0,0,0,0.06) 10px, rgba(0,0,0,0.06) 11px);
+}
+.door-l { left: 0; transform-origin: left center; }
+.door-r { left: 50%; transform-origin: right center; }
+.door-l.open { transform: perspective(1000px) rotateY(-115deg); }
+.door-r.open { transform: perspective(1000px) rotateY(115deg); }
 
-  /* FAQ */
-  .faq { background: var(--light); }
-  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
-  .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
-  .faq-q { font-family: var(--font-heading); font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 10px; display: flex; gap: 10px; align-items: flex-start; }
-  .faq-q::before { content: 'Q'; color: var(--gold); font-size: 16px; flex-shrink: 0; margin-top: -1px; }
-  .faq-a { font-size: 13px; color: var(--body); line-height: 1.8; padding-left: 22px; }
+/* Door panels */
+.dpanel {
+  position: absolute; border: 1.5px solid rgba(201,168,76,0.35);
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.3);
+}
+.door-l .dp1 { top:7%; left:10%; right:6%; height:22%; }
+.door-l .dp2 { top:33%; left:10%; right:6%; height:28%; }
+.door-l .dp3 { top:66%; left:10%; right:6%; height:18%; }
+.door-r .dp1 { top:7%; left:6%; right:10%; height:22%; }
+.door-r .dp2 { top:33%; left:6%; right:10%; height:28%; }
+.door-r .dp3 { top:66%; left:6%; right:10%; height:18%; }
 
-  /* FINAL CTA */
-  .final-cta { background: linear-gradient(135deg, var(--navy), #0a2844); padding: 100px 40px; text-align: center; position: relative; overflow: hidden; }
-  .final-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(167,157,128,0.08) 0%, transparent 70%); pointer-events: none; }
-  .final-cta h2 { font-family: var(--font-heading); font-size: clamp(28px, 4vw, 44px); font-weight: 700; color: var(--white); margin-bottom: 14px; position: relative; z-index: 1; }
-  .final-cta p { color: rgba(255,255,255,0.65); font-size: 16px; margin-bottom: 36px; position: relative; z-index: 1; }
-  .final-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+/* Kerala flower motif on panels */
+.dpanel-flower {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(201,168,76,0.25); font-size: 1.4rem;
+}
 
-  /* FOOTER */
-  footer { background: var(--black); padding: 28px 40px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.45); }
-  footer a { color: var(--gold); text-decoration: none; }
+/* Handle */
+.d-handle {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 12px; height: 12px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, var(--gold-pale), var(--gold));
+  box-shadow: 0 0 8px rgba(201,168,76,0.5);
+}
+.door-l .d-handle { right: 10px; }
+.door-r .d-handle { left: 10px; }
 
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+/* Diya flame on door */
+.diya-wrap {
+  position: absolute; top: 10%; left: 50%; transform: translateX(-50%);
+  z-index: 5; display: flex; flex-direction: column; align-items: center;
+}
+.diya-flame {
+  width: 10px; height: 16px;
+  background: radial-gradient(ellipse at 50% 80%, #ffcc44, #ff9900 50%, transparent 100%);
+  border-radius: 50% 50% 30% 30%;
+  animation: flicker 1.5s ease-in-out infinite alternate;
+  box-shadow: 0 0 12px 4px rgba(255,180,0,0.3);
+  margin-bottom: 2px;
+}
+@keyframes flicker {
+  0% { transform: scaleX(1) scaleY(1) rotate(-2deg); opacity: 0.9; }
+  100% { transform: scaleX(0.8) scaleY(1.1) rotate(2deg); opacity: 1; }
+}
+.diya-body {
+  width: 22px; height: 10px;
+  background: linear-gradient(to bottom, #c9a84c, #8a6a1e);
+  border-radius: 0 0 50% 50%;
+}
 
-  @media (max-width: 900px) {
-    .hero-inner { grid-template-columns: 1fr; }
-    .hero-card { max-width: 480px; }
-    .services-grid, .pricing-grid { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: 1fr 1fr; }
-    .faq-grid { grid-template-columns: 1fr; }
-    .hero { padding: 60px 20px; } section { padding: 60px 20px; }
-    .trust-bar { padding: 20px; } .topbar { padding: 14px 20px; }
-  }
-  @media (max-width: 480px) {
-    .why-grid { grid-template-columns: 1fr; }
-    .hero-btns, .final-btns { flex-direction: column; align-items: flex-start; }
-  }
+/* Bottom floral decoration on door */
+.door-flowers {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 28%;
+  z-index: 15; overflow: hidden;
+}
+.door-flowers svg { width: 100%; height: 100%; }
+
+/* Click label */
+.click-label {
+  margin-top: 18px; font-family: 'Cinzel', serif;
+  font-size: 0.62rem; letter-spacing: 0.45em; text-transform: uppercase;
+  color: var(--gold); opacity: 0.7;
+  animation: pulse-label 2.2s ease-in-out infinite;
+}
+@keyframes pulse-label { 0%,100%{opacity:0.4} 50%{opacity:0.9} }
+
+/* ===================== INVITATION ===================== */
+#invitation {
+  position: fixed; inset: 0; overflow-y: auto;
+  background: var(--forest-dark);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.9s ease;
+}
+#invitation.show { opacity: 1; pointer-events: all; }
+
+/* Full page card */
+.card {
+  max-width: 620px; margin: 0 auto;
+  background: var(--forest);
+  min-height: 100vh;
+  position: relative; overflow: hidden;
+}
+
+/* Card background texture */
+.card::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.05) 0%, transparent 50%);
+}
+
+/* Gold border frame inside card */
+.card-inner {
+  position: relative; z-index: 1;
+  margin: 20px; padding: 0;
+  border: 1.5px solid rgba(201,168,76,0.35);
+}
+.card-inner::before {
+  content: ''; position: absolute; inset: 6px;
+  border: 1px solid rgba(201,168,76,0.15); pointer-events: none;
+}
+
+/* ---- Card Header ---- */
+.card-header {
+  padding: 2.5rem 2rem 1.5rem;
+  text-align: center; position: relative;
+}
+
+/* Peacock crest top */
+.crest-svg { margin: 0 auto 1.2rem; display: block; }
+
+.families-invite {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.6rem, 2vw, 0.72rem);
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-dim); line-height: 2.2;
+}
+
+.wedding-script {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  color: var(--white);
+  display: block; margin: 0.3rem 0 0.1rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.of-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem; letter-spacing: 0.5em;
+  color: var(--text-dim); text-transform: uppercase;
+  display: block; margin: 0.5rem 0;
+}
+
+/* Names */
+.names-block {
+  padding: 0.5rem 1rem 1rem;
+  text-align: center;
+}
+.main-names {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(3.5rem, 11vw, 5.5rem);
+  color: var(--white);
+  display: block; line-height: 1;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.amp {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--gold-light); display: block;
+  margin: -0.2rem 0;
+}
+
+/* Thin gold rule */
+.gold-rule {
+  display: flex; align-items: center; gap: 10px;
+  margin: 0.8rem auto; max-width: 320px;
+}
+.gold-rule-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+.gold-rule-dot { color: var(--gold); font-size: 0.9rem; }
+
+/* Parents */
+.parents-text {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.58rem, 1.8vw, 0.68rem);
+  letter-spacing: 0.12em; color: var(--text-dim);
+  line-height: 2.1; text-align: center;
+  text-transform: uppercase; padding: 0 1.5rem;
+}
+
+/* ---- Date Block ---- */
+.date-block {
+  text-align: center;
+  padding: 1.5rem 2rem 0.8rem;
+}
+.date-top-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem; letter-spacing: 0.5em;
+  color: var(--gold); text-transform: uppercase;
+  display: block; margin-bottom: 0.6rem;
+}
+.date-main {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  letter-spacing: 0.2em; color: var(--white);
+  text-transform: uppercase; display: block;
+  margin-bottom: 0.4rem;
+}
+.date-events {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(0.88rem, 2.5vw, 1rem);
+  color: var(--text-dim); line-height: 2;
+  display: block;
+}
+
+/* ---- Venue ---- */
+.venue-block {
+  text-align: center; padding: 0.6rem 2rem 1rem;
+}
+.venue-name-text {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  letter-spacing: 0.18em; color: var(--white);
+  text-transform: uppercase; display: block;
+  margin-bottom: 0.3rem;
+}
+.venue-addr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(0.88rem, 2.5vw, 1rem);
+  color: var(--text-dim); line-height: 1.9;
+  display: block;
+}
+
+/* ---- Regards ---- */
+.regards-block {
+  text-align: center; padding: 0.8rem 2rem 1.2rem;
+}
+.regards-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem; letter-spacing: 0.4em;
+  color: var(--text-dim); text-transform: uppercase;
+  display: block; margin-bottom: 0.4rem;
+}
+.regards-name {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  color: var(--gold-light); display: block;
+}
+
+/* ---- Map Section ---- */
+.map-section {
+  margin: 0 20px 0;
+  border-top: 1px solid rgba(201,168,76,0.2);
+  background: var(--deep-forest);
+}
+
+.map-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem; letter-spacing: 0.4em;
+  color: var(--gold); text-transform: uppercase;
+  text-align: center; padding: 1rem 0 0.6rem;
+  display: block;
+}
+
+.map-embed {
+  width: 100%; height: 240px; border: none;
+  display: block; opacity: 0.88;
+  filter: saturate(0.6) brightness(0.8) hue-rotate(90deg);
+}
+
+.map-cta {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 0.9rem 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none;
+  border-top: 1px solid rgba(201,168,76,0.15);
+  transition: color 0.3s;
+}
+.map-cta:hover { color: var(--gold-pale); }
+.map-cta svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+/* ---- RSVP ---- */
+.rsvp-section {
+  margin: 0 20px; padding: 1.4rem 1.5rem;
+  border-top: 1px solid rgba(201,168,76,0.2);
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  text-align: center; background: var(--deep-forest);
+}
+.rsvp-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(0.88rem, 2.5vw, 1rem);
+  color: var(--text-dim); line-height: 1.8; display: block; margin-bottom: 1rem;
+}
+.rsvp-btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem; letter-spacing: 0.35em; text-transform: uppercase;
+  text-decoration: none; background: transparent;
+  transition: all 0.3s ease; cursor: pointer;
+}
+.rsvp-btn:hover { background: rgba(201,168,76,0.1); color: var(--gold-pale); }
+
+/* ---- Floral footer (like reference) ---- */
+.floral-footer {
+  position: relative; width: calc(100% - 40px); margin: 0 20px;
+  height: clamp(120px, 28vw, 200px); overflow: hidden;
+  background: var(--forest-dark);
+}
+.floral-footer svg { width: 100%; height: 100%; }
+
+/* Card bottom gap */
+.card-bottom-pad { height: 0; }
+
+/* ===================== ANIMATIONS ===================== */
+.fade-in {
+  opacity: 0; transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Petals */
+.petal {
+  position: fixed; pointer-events: none; z-index: 200;
+  font-size: 0.9rem; opacity: 0;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+  0%   { opacity: 0.8; transform: translateY(-40px) rotate(0deg); }
+  100% { opacity: 0;   transform: translateY(110vh) rotate(540deg); }
+}
 </style>
 </head>
 <body>
 
-<nav class="topbar">
-  <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services">
-  <a href="https://3sbusinessme.com/cost-calculator/" class="btn-blue" target="_blank">💬 Calculate the cost here</a>
-</nav>
+<!-- ===================== DOOR SCENE ===================== -->
+<div id="scene">
+  <!-- dust particles -->
+  <div class="dust" style="width:3px;height:3px;left:15%;background:rgba(201,168,76,0.7);animation-duration:7s;animation-delay:0s;"></div>
+  <div class="dust" style="width:4px;height:4px;left:35%;background:rgba(201,168,76,0.5);animation-duration:9s;animation-delay:1.2s;"></div>
+  <div class="dust" style="width:2px;height:2px;left:60%;background:rgba(201,168,76,0.8);animation-duration:6s;animation-delay:0.6s;"></div>
+  <div class="dust" style="width:3px;height:3px;left:78%;background:rgba(201,168,76,0.6);animation-duration:8s;animation-delay:2s;"></div>
+  <div class="dust" style="width:5px;height:5px;left:50%;background:rgba(201,168,76,0.4);animation-duration:11s;animation-delay:3s;"></div>
+  <div class="dust" style="width:2px;height:2px;left:25%;background:rgba(201,168,76,0.7);animation-duration:7s;animation-delay:4s;"></div>
+  <div class="dust" style="width:3px;height:3px;left:88%;background:rgba(201,168,76,0.5);animation-duration:9s;animation-delay:1.8s;"></div>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <span class="hero-badge">Dubai Business Setup Experts</span>
-      <h1>Start Your Business<br>in Dubai <span>in 5 Days</span></h1>
-      <p class="hero-lead">Freezone, Mainland, or Offshore — we handle everything from trade license to visa. Transparent pricing. One dedicated consultant. No hidden fees.</p>
-      <div class="hero-btns">
-        <a href="https://wa.me/971565876341?text=Hi%2C%20I%20want%20to%20set%20up%20a%20business%20in%20Dubai" class="btn-gold" target="_blank">💬 WhatsApp Us Now</a>
-        <a href="#contact" class="btn-outline">Get Free Quote</a>
-      </div>
+  <!-- Kerala arch SVG -->
+  <div class="arch-svg-wrap">
+    <svg viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="archg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#1e3a2f"/>
+          <stop offset="100%" stop-color="#0d1f17"/>
+        </linearGradient>
+      </defs>
+      <!-- Arch fill -->
+      <path d="M18,100 L18,52 Q18,8 180,4 Q342,8 342,52 L342,100 Z" fill="url(#archg)" stroke="#c9a84c" stroke-width="1.8"/>
+      <!-- Inner arch line -->
+      <path d="M34,100 L34,56 Q34,20 180,16 Q326,20 326,56 L326,100" fill="none" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+      <!-- Hanging lamp chain -->
+      <line x1="180" y1="4" x2="180" y2="32" stroke="#c9a84c" stroke-width="1" opacity="0.7"/>
+      <!-- Lamp body -->
+      <ellipse cx="180" cy="44" rx="14" ry="18" fill="#1a3327" stroke="#c9a84c" stroke-width="1.2"/>
+      <ellipse cx="180" cy="38" rx="9" ry="6" fill="rgba(255,200,80,0.15)" stroke="rgba(201,168,76,0.5)" stroke-width="0.8"/>
+      <!-- Lamp flame -->
+      <ellipse cx="180" cy="33" rx="4" ry="6" fill="rgba(255,180,40,0.7)" opacity="0.8"/>
+      <!-- Kolam dots at arch top -->
+      <circle cx="180" cy="4" r="4" fill="#c9a84c"/>
+      <circle cx="130" cy="18" r="2.5" fill="rgba(201,168,76,0.5)"/>
+      <circle cx="230" cy="18" r="2.5" fill="rgba(201,168,76,0.5)"/>
+      <circle cx="90" cy="40" r="2" fill="rgba(201,168,76,0.4)"/>
+      <circle cx="270" cy="40" r="2" fill="rgba(201,168,76,0.4)"/>
+      <!-- Kerala lotus at top center -->
+      <g transform="translate(180,4)" opacity="0.6">
+        <ellipse rx="5" ry="3" fill="#c9a84c" transform="rotate(-30)"/>
+        <ellipse rx="5" ry="3" fill="#c9a84c" transform="rotate(30)"/>
+        <ellipse rx="5" ry="3" fill="#c9a84c" transform="rotate(90)"/>
+        <ellipse cx="0" cy="0" rx="3" ry="3" fill="#c9a84c"/>
+      </g>
+      <!-- Text inside arch -->
+      <text x="180" y="82" text-anchor="middle" fill="rgba(201,168,76,0.8)" font-family="Cinzel, serif" font-size="9" letter-spacing="3.5">WEDDING INVITATION</text>
+    </svg>
+  </div>
+
+  <!-- Door -->
+  <div class="door-frame" id="doorFrame">
+    <div class="door-back"></div>
+    <div class="door-back-text">
+      <span class="preview-names">Shijas<br>&amp;<br>Munavvira</span>
+      <span class="preview-sub">2nd August 2025</span>
     </div>
 
-    <div class="hero-card" id="contact">
-      <h3>Get a Free Consultation</h3>
-      <p>Fill in your details and we will get back to you within the hour.</p>
-      <form action="mailto:seo@3sbusinessme.com" method="POST" enctype="text/plain">
-        <div class="form-group"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required></div>
-        <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="phone" placeholder="+971 XX XXX XXXX" required></div>
-        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@example.com"></div>
-        <div class="form-group">
-          <label>Setup Type</label>
-          <select name="setup_type">
-            <option value="">Select an option</option>
-            <option>Freezone</option><option>Mainland</option><option>Offshore</option><option>Not sure yet</option>
-          </select>
-        </div>
-        <button type="submit" class="form-submit">Send My Request →</button>
-      </form>
-      <div class="form-divider">or</div>
-      <a href="https://wa.me/971565876341?text=Hi%2C%20I%20want%20to%20set%20up%20a%20business%20in%20Dubai" class="btn-wa" target="_blank">💬 Chat on WhatsApp</a>
+    <!-- Diya flame top center -->
+    <div class="diya-wrap" style="z-index:20;">
+      <div class="diya-flame"></div>
+      <div class="diya-body"></div>
+    </div>
+
+    <!-- Left door -->
+    <div class="door-half door-l" id="doorL">
+      <div class="dpanel dp1"><div class="dpanel-flower">✿</div></div>
+      <div class="dpanel dp2"><div class="dpanel-flower">❁</div></div>
+      <div class="dpanel dp3"></div>
+      <div class="d-handle"></div>
+    </div>
+
+    <!-- Right door -->
+    <div class="door-half door-r" id="doorR">
+      <div class="dpanel dp1"><div class="dpanel-flower">✿</div></div>
+      <div class="dpanel dp2"><div class="dpanel-flower">❁</div></div>
+      <div class="dpanel dp3"></div>
+      <div class="d-handle"></div>
+    </div>
+
+    <!-- Flowers on door bottom -->
+    <div class="door-flowers">
+      <svg viewBox="0 0 360 120" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stems -->
+        <path d="M40,120 Q50,80 60,70" stroke="#2d6b45" stroke-width="2" fill="none"/>
+        <path d="M80,120 Q85,90 90,75" stroke="#2d6b45" stroke-width="1.5" fill="none"/>
+        <path d="M130,120 Q125,85 118,72" stroke="#2d6b45" stroke-width="2" fill="none"/>
+        <path d="M180,120 Q180,82 180,68" stroke="#2d6b45" stroke-width="2" fill="none"/>
+        <path d="M230,120 Q235,85 242,72" stroke="#2d6b45" stroke-width="2" fill="none"/>
+        <path d="M280,120 Q275,90 270,75" stroke="#2d6b45" stroke-width="1.5" fill="none"/>
+        <path d="M320,120 Q310,80 300,70" stroke="#2d6b45" stroke-width="2" fill="none"/>
+        <!-- Leaves -->
+        <ellipse cx="55" cy="85" rx="12" ry="6" fill="#2d6b45" transform="rotate(-25,55,85)" opacity="0.9"/>
+        <ellipse cx="88" cy="88" rx="10" ry="5" fill="#3a8055" transform="rotate(15,88,88)" opacity="0.8"/>
+        <ellipse cx="122" cy="86" rx="11" ry="5" fill="#2d6b45" transform="rotate(-15,122,86)" opacity="0.9"/>
+        <ellipse cx="178" cy="84" rx="12" ry="5" fill="#3a8055" transform="rotate(5,178,84)" opacity="0.8"/>
+        <ellipse cx="238" cy="86" rx="11" ry="5" fill="#2d6b45" transform="rotate(15,238,86)" opacity="0.9"/>
+        <ellipse cx="272" cy="88" rx="10" ry="5" fill="#3a8055" transform="rotate(-15,272,88)" opacity="0.8"/>
+        <ellipse cx="305" cy="85" rx="12" ry="6" fill="#2d6b45" transform="rotate(25,305,85)" opacity="0.9"/>
+        <!-- Pink roses -->
+        <circle cx="60" cy="66" r="14" fill="#d4607a" opacity="0.9"/>
+        <circle cx="60" cy="66" r="10" fill="#e07a8f" opacity="0.9"/>
+        <circle cx="60" cy="66" r="6" fill="#f0a0b0" opacity="0.9"/>
+        <circle cx="60" cy="66" r="3" fill="#ffd0d8" opacity="0.9"/>
+        <!-- Cream/white rose -->
+        <circle cx="118" cy="70" r="15" fill="#e8ddb0" opacity="0.95"/>
+        <circle cx="118" cy="70" r="10" fill="#f0e8c8" opacity="0.95"/>
+        <circle cx="118" cy="70" r="5" fill="#faf5e4" opacity="0.95"/>
+        <!-- Deep red rose -->
+        <circle cx="180" cy="64" r="16" fill="#8b1a2a" opacity="0.95"/>
+        <circle cx="180" cy="64" r="11" fill="#a62435" opacity="0.95"/>
+        <circle cx="180" cy="64" r="6" fill="#c43048" opacity="0.95"/>
+        <circle cx="180" cy="64" r="3" fill="#e8607a" opacity="0.95"/>
+        <!-- Magenta rose -->
+        <circle cx="242" cy="70" r="15" fill="#c02880" opacity="0.9"/>
+        <circle cx="242" cy="70" r="10" fill="#d43a95" opacity="0.9"/>
+        <circle cx="242" cy="70" r="5" fill="#e870b8" opacity="0.9"/>
+        <!-- Cream rose right -->
+        <circle cx="300" cy="66" r="14" fill="#dfd0a8" opacity="0.95"/>
+        <circle cx="300" cy="66" r="9" fill="#ece0c0" opacity="0.95"/>
+        <circle cx="300" cy="66" r="5" fill="#f5edd8" opacity="0.95"/>
+        <!-- Small bud flowers -->
+        <circle cx="90" cy="72" r="7" fill="#f0aab8" opacity="0.8"/>
+        <circle cx="90" cy="72" r="4" fill="#ffd0d8" opacity="0.8"/>
+        <circle cx="270" cy="72" r="7" fill="#f0aab8" opacity="0.8"/>
+        <circle cx="270" cy="72" r="4" fill="#ffd0d8" opacity="0.8"/>
+        <!-- Tiny white buds -->
+        <circle cx="40" cy="78" r="5" fill="#f5f0e8" opacity="0.7"/>
+        <circle cx="155" cy="80" r="4" fill="#f5f0e8" opacity="0.6"/>
+        <circle cx="205" cy="80" r="4" fill="#f5f0e8" opacity="0.6"/>
+        <circle cx="320" cy="76" r="5" fill="#f5f0e8" opacity="0.7"/>
+      </svg>
     </div>
   </div>
-</section>
 
-<div class="trust-bar">
-  <div class="trust-inner">
-    <div class="trust-item"><span class="dot"></span> 100% Foreign Ownership</div>
-    <div class="trust-item"><span class="dot"></span> Setup from AED 6,000</div>
-    <div class="trust-item"><span class="dot"></span> Ready in 5 Working Days</div>
-    <div class="trust-item"><span class="dot"></span> 500+ Businesses Launched</div>
-    <div class="trust-item"><span class="dot"></span> No Hidden Fees</div>
-    <div class="trust-item"><span class="dot"></span> Remote Setup Available</div>
+  <div class="click-label">✦ Tap to open ✦</div>
+</div>
+
+<!-- ===================== INVITATION ===================== -->
+<div id="invitation">
+  <div class="card">
+
+    <!-- Gold frame wrapper -->
+    <div class="card-inner">
+
+      <!-- Peacock crest -->
+      <div class="card-header fade-in">
+        <svg class="crest-svg" width="90" height="55" viewBox="0 0 90 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Two peacocks facing each other -->
+          <g opacity="0.85">
+            <!-- Left peacock body -->
+            <ellipse cx="22" cy="35" rx="10" ry="7" fill="#c9a84c"/>
+            <circle cx="15" cy="28" r="5" fill="#c9a84c"/>
+            <!-- Left tail fan -->
+            <path d="M32,35 Q45,15 40,8 Q38,20 35,30 Z" fill="#c9a84c" opacity="0.6"/>
+            <path d="M32,33 Q50,18 48,10 Q44,22 38,32 Z" fill="#c9a84c" opacity="0.5"/>
+            <path d="M32,36 Q50,30 52,22 Q46,30 40,36 Z" fill="#c9a84c" opacity="0.6"/>
+            <!-- Right peacock (mirror) -->
+            <ellipse cx="68" cy="35" rx="10" ry="7" fill="#c9a84c"/>
+            <circle cx="75" cy="28" r="5" fill="#c9a84c"/>
+            <path d="M58,35 Q45,15 50,8 Q52,20 55,30 Z" fill="#c9a84c" opacity="0.6"/>
+            <path d="M58,33 Q40,18 42,10 Q46,22 52,32 Z" fill="#c9a84c" opacity="0.5"/>
+            <path d="M58,36 Q40,30 38,22 Q44,30 50,36 Z" fill="#c9a84c" opacity="0.6"/>
+            <!-- Center lotus -->
+            <ellipse cx="45" cy="42" rx="14" ry="5" fill="rgba(201,168,76,0.3)" stroke="#c9a84c" stroke-width="1"/>
+            <ellipse cx="45" cy="38" rx="6" ry="8" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="45" cy="36" r="3" fill="#c9a84c" opacity="0.7"/>
+            <!-- Scrollwork bottom -->
+            <path d="M10,44 Q20,50 45,52 Q70,50 80,44" stroke="#c9a84c" stroke-width="1" fill="none" opacity="0.5"/>
+          </g>
+        </svg>
+
+        <p class="families-invite">
+          The families of Shijas &amp; Munavvira<br>
+          request your gracious presence at the
+        </p>
+
+        <span class="wedding-script">Nikah Ceremony</span>
+        <span class="of-text">— of —</span>
+      </div>
+
+      <!-- Names -->
+      <div class="names-block fade-in">
+        <span class="main-names">Shijas &amp; Munavvira</span>
+      </div>
+
+      <div class="gold-rule fade-in">
+        <div class="gold-rule-line"></div>
+        <span class="gold-rule-dot">✦</span>
+        <div class="gold-rule-line"></div>
+      </div>
+
+      <!-- Parents -->
+      <p class="parents-text fade-in">
+        (Son of Mr. &amp; Mrs. Abdul Latheef, Malappuram)<br>
+        (Daughter of Mr. &amp; Mrs. Mustafa Ali, Kozhikode)
+      </p>
+
+      <div class="gold-rule fade-in" style="margin-top:1.2rem;">
+        <div class="gold-rule-line"></div>
+        <span class="gold-rule-dot">❁</span>
+        <div class="gold-rule-line"></div>
+      </div>
+
+      <!-- Date -->
+      <div class="date-block fade-in">
+        <span class="date-top-label">✦ Save the Date ✦</span>
+        <span class="date-main">Saturday, 2nd August · 2025</span>
+        <span class="date-events">
+          Nikah : 12:00 Noon (After Zuhr) &nbsp;|&nbsp; Walima : 7:00 PM
+        </span>
+      </div>
+
+      <div class="gold-rule fade-in">
+        <div class="gold-rule-line"></div>
+        <span class="gold-rule-dot">✦</span>
+        <div class="gold-rule-line"></div>
+      </div>
+
+      <!-- Venue -->
+      <div class="venue-block fade-in">
+        <span class="venue-name-text">At the Grand Hall, Hotel Hilton</span>
+        <span class="venue-addr">
+          Palakkad Road, Malappuram<br>
+          Kerala — 676 505
+        </span>
+      </div>
+
+      <div class="gold-rule fade-in">
+        <div class="gold-rule-line"></div>
+        <span class="gold-rule-dot">❁</span>
+        <div class="gold-rule-line"></div>
+      </div>
+
+      <!-- Regards -->
+      <div class="regards-block fade-in">
+        <span class="regards-label">Warm Regards</span>
+        <span class="regards-name">The Abdul Latheef Family</span>
+      </div>
+
+    </div><!-- /card-inner -->
+
+    <!-- Map -->
+    <div class="map-section fade-in">
+      <span class="map-label">✦ Venue Location ✦</span>
+      <iframe
+        class="map-embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31361.94!2d76.0740!3d11.0510!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba647b91d618853%3A0xf1988ec1dfc48db!2sMalappuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Venue Map">
+      </iframe>
+      <a class="map-cta" href="https://maps.google.com/?q=Malappuram,Kerala" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Open in Google Maps
+      </a>
+    </div>
+
+    <!-- RSVP -->
+    <div class="rsvp-section fade-in">
+      <span class="rsvp-text">
+        Your presence is our greatest blessing.<br>
+        Please confirm your attendance by 20th July 2025.
+      </span>
+      <a class="rsvp-btn" href="https://wa.me/?text=Assalamu+Alaikum!+I+confirm+my+attendance+to+the+Nikah+of+Shijas+%26+Munavvira+on+2nd+August+InshaAllah" target="_blank">
+        RSVP via WhatsApp ✦
+      </a>
+    </div>
+
+    <!-- Floral footer — matching reference exactly -->
+    <div class="floral-footer">
+      <svg viewBox="0 0 580 180" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background fill -->
+        <rect width="580" height="180" fill="#0d1f17"/>
+        <!-- Many stems -->
+        <path d="M20,180 Q30,140 38,120" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M60,180 Q68,148 72,128" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M100,180 Q105,142 108,118" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M145,180 Q145,138 148,112" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M190,180 Q186,135 182,108" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M230,180 Q235,140 240,115" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M270,180 Q272,138 278,112" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M310,180 Q308,140 306,118" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M355,180 Q352,142 348,115" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M395,180 Q398,145 402,122" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M435,180 Q432,140 428,118" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M475,180 Q478,148 480,128" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <path d="M515,180 Q510,140 504,118" stroke="#2d6b45" stroke-width="2.5" fill="none"/>
+        <path d="M555,180 Q548,142 542,122" stroke="#3a8055" stroke-width="2" fill="none"/>
+        <!-- Big leaves -->
+        <ellipse cx="34" cy="138" rx="16" ry="7" fill="#2d6b45" transform="rotate(-30,34,138)" opacity="0.95"/>
+        <ellipse cx="42" cy="128" rx="14" ry="6" fill="#3a8055" transform="rotate(10,42,128)" opacity="0.9"/>
+        <ellipse cx="70" cy="142" rx="13" ry="5.5" fill="#2d6b45" transform="rotate(20,70,142)" opacity="0.9"/>
+        <ellipse cx="106" cy="135" rx="15" ry="6.5" fill="#3a8055" transform="rotate(-15,106,135)" opacity="0.95"/>
+        <ellipse cx="112" cy="125" rx="12" ry="5" fill="#2d6b45" transform="rotate(25,112,125)" opacity="0.85"/>
+        <ellipse cx="148" cy="132" rx="15" ry="6" fill="#3a8055" transform="rotate(5,148,132)" opacity="0.9"/>
+        <ellipse cx="184" cy="130" rx="15" ry="6.5" fill="#2d6b45" transform="rotate(-10,184,130)" opacity="0.95"/>
+        <ellipse cx="238" cy="134" rx="14" ry="6" fill="#3a8055" transform="rotate(15,238,134)" opacity="0.9"/>
+        <ellipse cx="245" cy="124" rx="12" ry="5" fill="#2d6b45" transform="rotate(-20,245,124)" opacity="0.85"/>
+        <ellipse cx="278" cy="130" rx="15" ry="6.5" fill="#3a8055" transform="rotate(8,278,130)" opacity="0.9"/>
+        <ellipse cx="308" cy="135" rx="14" ry="6" fill="#2d6b45" transform="rotate(-5,308,135)" opacity="0.95"/>
+        <ellipse cx="350" cy="132" rx="15" ry="6" fill="#3a8055" transform="rotate(20,350,132)" opacity="0.9"/>
+        <ellipse cx="400" cy="138" rx="13" ry="6" fill="#2d6b45" transform="rotate(-18,400,138)" opacity="0.9"/>
+        <ellipse cx="428" cy="136" rx="15" ry="6.5" fill="#3a8055" transform="rotate(12,428,136)" opacity="0.95"/>
+        <ellipse cx="478" cy="142" rx="13" ry="5.5" fill="#2d6b45" transform="rotate(-22,478,142)" opacity="0.9"/>
+        <ellipse cx="505" cy="136" rx="15" ry="6" fill="#3a8055" transform="rotate(8,505,136)" opacity="0.9"/>
+        <ellipse cx="544" cy="140" rx="14" ry="6" fill="#2d6b45" transform="rotate(-12,544,140)" opacity="0.9"/>
+
+        <!-- Large deep red roses -->
+        <circle cx="38" cy="112" r="18" fill="#7a1525" opacity="0.95"/>
+        <circle cx="38" cy="112" r="13" fill="#9a2035" opacity="0.95"/>
+        <circle cx="38" cy="112" r="8" fill="#c03050" opacity="0.95"/>
+        <circle cx="38" cy="112" r="4" fill="#e06080" opacity="0.95"/>
+
+        <circle cx="182" cy="102" r="20" fill="#7a1525" opacity="0.95"/>
+        <circle cx="182" cy="102" r="14" fill="#9a2035" opacity="0.95"/>
+        <circle cx="182" cy="102" r="8" fill="#c03050" opacity="0.95"/>
+        <circle cx="182" cy="102" r="4" fill="#e06080" opacity="0.95"/>
+
+        <circle cx="348" cy="106" r="18" fill="#7a1525" opacity="0.95"/>
+        <circle cx="348" cy="106" r="13" fill="#9a2035" opacity="0.95"/>
+        <circle cx="348" cy="106" r="8" fill="#c03050" opacity="0.95"/>
+        <circle cx="348" cy="106" r="4" fill="#e06080" opacity="0.95"/>
+
+        <circle cx="504" cy="110" r="18" fill="#7a1525" opacity="0.95"/>
+        <circle cx="504" cy="110" r="13" fill="#9a2035" opacity="0.95"/>
+        <circle cx="504" cy="110" r="8" fill="#c03050" opacity="0.95"/>
+        <circle cx="504" cy="110" r="4" fill="#e06080" opacity="0.95"/>
+
+        <!-- Magenta/hot pink roses -->
+        <circle cx="108" cy="108" r="17" fill="#a01870" opacity="0.95"/>
+        <circle cx="108" cy="108" r="12" fill="#c02888" opacity="0.95"/>
+        <circle cx="108" cy="108" r="7" fill="#e050a8" opacity="0.95"/>
+        <circle cx="108" cy="108" r="3.5" fill="#f890d0" opacity="0.95"/>
+
+        <circle cx="278" cy="104" r="17" fill="#a01870" opacity="0.95"/>
+        <circle cx="278" cy="104" r="12" fill="#c02888" opacity="0.95"/>
+        <circle cx="278" cy="104" r="7" fill="#e050a8" opacity="0.95"/>
+        <circle cx="278" cy="104" r="3.5" fill="#f890d0" opacity="0.95"/>
+
+        <circle cx="428" cy="108" r="17" fill="#a01870" opacity="0.95"/>
+        <circle cx="428" cy="108" r="12" fill="#c02888" opacity="0.95"/>
+        <circle cx="428" cy="108" r="7" fill="#e050a8" opacity="0.95"/>
+        <circle cx="428" cy="108" r="3.5" fill="#f890d0" opacity="0.95"/>
+
+        <!-- Cream/ivory roses -->
+        <circle cx="148" cy="104" r="17" fill="#c8b878" opacity="0.95"/>
+        <circle cx="148" cy="104" r="12" fill="#dcd0a0" opacity="0.95"/>
+        <circle cx="148" cy="104" r="7" fill="#ece8c8" opacity="0.95"/>
+        <circle cx="148" cy="104" r="3.5" fill="#f8f5e8" opacity="0.95"/>
+
+        <circle cx="240" cy="106" r="16" fill="#c8b878" opacity="0.9"/>
+        <circle cx="240" cy="106" r="11" fill="#dcd0a0" opacity="0.9"/>
+        <circle cx="240" cy="106" r="6.5" fill="#ece8c8" opacity="0.9"/>
+        <circle cx="240" cy="106" r="3" fill="#f8f5e8" opacity="0.9"/>
+
+        <circle cx="402" cy="112" r="16" fill="#c8b878" opacity="0.9"/>
+        <circle cx="402" cy="112" r="11" fill="#dcd0a0" opacity="0.9"/>
+        <circle cx="402" cy="112" r="6.5" fill="#ece8c8" opacity="0.9"/>
+        <circle cx="402" cy="112" r="3" fill="#f8f5e8" opacity="0.9"/>
+
+        <circle cx="542" cy="112" r="16" fill="#c8b878" opacity="0.9"/>
+        <circle cx="542" cy="112" r="11" fill="#dcd0a0" opacity="0.9"/>
+        <circle cx="542" cy="112" r="6.5" fill="#ece8c8" opacity="0.9"/>
+        <circle cx="542" cy="112" r="3" fill="#f8f5e8" opacity="0.9"/>
+
+        <!-- Light pink small roses -->
+        <circle cx="70" cy="120" r="10" fill="#e890a0" opacity="0.85"/>
+        <circle cx="70" cy="120" r="6" fill="#f5b0bc" opacity="0.9"/>
+        <circle cx="70" cy="120" r="3" fill="#fdd0d8" opacity="0.9"/>
+
+        <circle cx="308" cy="112" r="11" fill="#e890a0" opacity="0.85"/>
+        <circle cx="308" cy="112" r="7" fill="#f5b0bc" opacity="0.9"/>
+        <circle cx="308" cy="112" r="3.5" fill="#fdd0d8" opacity="0.9"/>
+
+        <circle cx="480" cy="118" r="10" fill="#e890a0" opacity="0.85"/>
+        <circle cx="480" cy="118" r="6" fill="#f5b0bc" opacity="0.9"/>
+        <circle cx="480" cy="118" r="3" fill="#fdd0d8" opacity="0.9"/>
+
+        <!-- Tiny white buds scattered -->
+        <circle cx="20" cy="130" r="5" fill="#f5f2ec" opacity="0.6"/>
+        <circle cx="160" cy="122" r="4" fill="#f5f2ec" opacity="0.5"/>
+        <circle cx="220" cy="125" r="5" fill="#f5f2ec" opacity="0.6"/>
+        <circle cx="360" cy="122" r="4" fill="#f5f2ec" opacity="0.5"/>
+        <circle cx="460" cy="126" r="5" fill="#f5f2ec" opacity="0.6"/>
+        <circle cx="560" cy="130" r="4" fill="#f5f2ec" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <div class="card-bottom-pad"></div>
   </div>
 </div>
 
-<section style="background: var(--white);">
-  <div class="container">
-    <span class="section-label">What We Offer</span>
-    <h2 class="section-title">Choose Your Setup Type</h2>
-    <p class="section-sub">Not sure which one suits you? Our consultants guide you to the right fit — free of charge.</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🏢</div>
-        <h3>Freezone Setup</h3>
-        <p>100% foreign ownership, zero corporate tax, and fast registration. Ideal for consultants, freelancers, and international businesses.</p>
-        <div class="service-price">Starting from <strong>AED 6,000</strong></div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🏙️</div>
-        <h3>Mainland Setup</h3>
-        <p>Trade freely across the UAE, work with government entities, and access the full local market with no restrictions.</p>
-        <div class="service-price">Starting from <strong>AED 15,000</strong></div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🌍</div>
-        <h3>Offshore Setup</h3>
-        <p>Protect assets, hold international shares, and manage cross-border operations with full privacy and low overheads.</p>
-        <div class="service-price">Starting from <strong>AED 12,000</strong></div>
-      </div>
-    </div>
-  </div>
-</section>
+<script>
+// ===== DOOR INTERACTION =====
+let opened = false;
 
-<section class="pricing">
-  <div class="container">
-    <span class="section-label">Transparent Pricing</span>
-    <h2 class="section-title">Know Your Costs Upfront</h2>
-    <p class="section-sub">No surprises. No hidden charges. Here is what a typical first-year setup looks like.</p>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3>Freezone</h3>
-        <div class="price">AED 6K+</div>
-        <div class="price-note">Basic license — first year</div>
-        <ul class="pricing-features">
-          <li>Trade license included</li><li>100% foreign ownership</li><li>Ready in 5 to 7 days</li><li>Flexi-desk option available</li><li>Visa eligibility included</li>
-        </ul>
-        <a href="https://wa.me/971565876341?text=Freezone%20setup%20inquiry" class="btn-blue" target="_blank">Get Quote</a>
-      </div>
-      <div class="pricing-card featured">
-        <div class="featured-tag">Most Popular</div>
-        <h3>Mainland</h3>
-        <div class="price">AED 15K+</div>
-        <div class="price-note">Full mainland license — first year</div>
-        <ul class="pricing-features">
-          <li>DET trade license</li><li>Full UAE market access</li><li>Government contract eligible</li><li>Setup in 2 to 3 weeks</li><li>PRO services included</li>
-        </ul>
-        <a href="https://wa.me/971565876341?text=Mainland%20setup%20inquiry" class="btn-blue" target="_blank">Get Quote</a>
-      </div>
-      <div class="pricing-card">
-        <h3>Offshore</h3>
-        <div class="price">AED 12K+</div>
-        <div class="price-note">Offshore company — first year</div>
-        <ul class="pricing-features">
-          <li>Asset and IP protection</li><li>International trading</li><li>No office required</li><li>Full ownership privacy</li><li>Lowest ongoing cost</li>
-        </ul>
-        <a href="https://wa.me/971565876341?text=Offshore%20setup%20inquiry" class="btn-blue" target="_blank">Get Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
+function openDoor() {
+  if (opened) return;
+  opened = true;
 
-<section style="background: var(--white);">
-  <div class="container">
-    <span class="section-label">Why Choose 3S</span>
-    <h2 class="section-title">We Make It Simple</h2>
-    <div class="why-grid">
-      <div class="why-item"><div class="why-num">01</div><h4>Fast Processing</h4><p>Freezone companies ready in as little as 5 working days. We keep things moving so you do not wait.</p></div>
-      <div class="why-item"><div class="why-num">02</div><h4>End-to-End Support</h4><p>From license to visa to bank account — one team handles everything. No running between offices.</p></div>
-      <div class="why-item"><div class="why-num">03</div><h4>Transparent Pricing</h4><p>You know the full cost before you commit. No surprises, no hidden government fees added later.</p></div>
-      <div class="why-item"><div class="why-num">04</div><h4>Remote Setup Available</h4><p>No need to fly in. Many of our setups are completed fully online from anywhere in the world.</p></div>
-    </div>
-  </div>
-</section>
+  const scene = document.getElementById('scene');
+  const doorFrame = document.getElementById('doorFrame');
+  const doorL = document.getElementById('doorL');
+  const doorR = document.getElementById('doorR');
+  const inv = document.getElementById('invitation');
 
-<section class="faq">
-  <div class="container">
-    <span class="section-label">Common Questions</span>
-    <h2 class="section-title">Quick Answers</h2>
-    <div class="faq-grid">
-      <div class="faq-item"><div class="faq-q">Can I own 100% of my business as a foreigner?</div><p class="faq-a">Yes. Full foreign ownership is permitted for most commercial and professional activities — both in freezones and on the mainland.</p></div>
-      <div class="faq-item"><div class="faq-q">How long does business setup take in Dubai?</div><p class="faq-a">A freezone company can be ready in 5 to 10 working days. Mainland setup typically takes 2 to 3 weeks depending on the business activity.</p></div>
-      <div class="faq-item"><div class="faq-q">Do I need to be in Dubai to set up?</div><p class="faq-a">Not always. Many freezone setups allow full remote registration. Our team guides you through every stage regardless of where you are.</p></div>
-      <div class="faq-item"><div class="faq-q">What is included in the setup fee?</div><p class="faq-a">Trade license, government registration, and PRO services. Visa fees and office space are quoted separately and outlined clearly upfront.</p></div>
-      <div class="faq-item"><div class="faq-q">Which is better — freezone or mainland?</div><p class="faq-a">Freezone suits international operations and consultants. Mainland is better if you want to sell directly to UAE clients or work with government.</p></div>
-      <div class="faq-item"><div class="faq-q">What documents do I need to get started?</div><p class="faq-a">A copy of your passport, current UAE visa if applicable, Emirates ID, and a No Objection Certificate from your sponsor if you are a UAE resident.</p></div>
-    </div>
-  </div>
-</section>
+  // Step 1: Glow behind door
+  doorFrame.classList.add('open');
 
-<section class="final-cta">
-  <h2>Ready to Launch Your Business?</h2>
-  <p>Talk to a consultant today — free, no commitment.</p>
-  <div class="final-btns">
-    <a href="https://wa.me/971565876341?text=Hi%2C%20I%20want%20to%20set%20up%20a%20business%20in%20Dubai" class="btn-gold" target="_blank">💬 WhatsApp Us Now</a>
-    <a href="tel:+971565876341" class="btn-outline">📞 +971 56 587 6341</a>
-  </div>
-</section>
+  // Step 2: Swing doors open
+  setTimeout(() => {
+    doorL.classList.add('open');
+    doorR.classList.add('open');
+  }, 200);
 
-<footer>
-  <p>© 2026 3S Business Services · Sheikh Rashid Tower, 21st Floor, Sheikh Zayed Road, Dubai · <a href="tel:+97143955747">+971 4 395 5747</a> · <a href="mailto:seo@3sbusinessme.com">seo@3sbusinessme.com</a></p>
-</footer>
+  // Step 3: Fade out scene, fade in invitation — SAME background color so no flash
+  setTimeout(() => {
+    scene.classList.add('away');
+    inv.classList.add('show');
+    document.body.style.overflow = 'auto';
+    // Trigger fade-in animations
+    setTimeout(() => {
+      document.querySelectorAll('.fade-in').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 120);
+      });
+    }, 200);
+    spawnPetals();
+  }, 1600);
+}
 
+document.getElementById('scene').addEventListener('click', openDoor);
+document.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openDoor(); });
+
+// ===== PETALS =====
+function spawnPetals() {
+  const emojis = ['🌸', '🌺', '🌼', '✿', '❁'];
+  function drop() {
+    const el = document.createElement('div');
+    el.className = 'petal';
+    el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.fontSize = (0.65 + Math.random() * 0.7) + 'rem';
+    el.style.animationDuration = (7 + Math.random() * 7) + 's';
+    el.style.animationDelay = (Math.random() * 2) + 's';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 14000);
+  }
+  for (let i = 0; i < 14; i++) setTimeout(drop, i * 300);
+  setInterval(drop, 2800);
+}
+
+// ===== SCROLL ANIMATIONS =====
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
